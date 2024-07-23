@@ -1,0 +1,16 @@
+<html>
+    <head>
+    <title>The Gossip Project</title>
+    </head>
+    <body>
+    <h1>Mon super site de gossip</h1>
+    <p>Bienvenue, la liste des potins arrive bientôt, en attendant, <a href="/gossips/new/">créer un nouveau potin</a> </p>
+    </hr>
+    <% gossips.each do |gossip| %>
+        <p>    
+        <%= gossip.author %><br/>    
+        <%= gossip.content %>    
+       </p>    
+     <% end %>
+    </body>
+</html>
