@@ -6,10 +6,11 @@
     <h1>PAGE POTIN</h1>
     <p>Bienvenue, Voici la page du potin n° <%= id %> </p>
     </hr>
-        <p>    
+        <p>
         Son auteur : <%= gossip.author %><br/>
-        Le contenu du potin : <%= gossip.content %>    
-       </p>    
+        Le contenu du potin : <%= gossip.content %>
+       </p>
+       <a href="/gossips/<%= gossip.id %>/edit">Éditer le potin</a>
        <a href="/">Lien pour revenir à la page des potins </a>
     </body>
 </html>
